@@ -8,7 +8,7 @@ date_default_timezone_set('Asia/Tashkent');
 require './vendor/autoload.php';
 
 try {
-    $phones = Phones::getPhones();
+    $phones = Phones::getAll();
     dd($phones);
 } catch (Exception|Error $exception) {
     dd($exception);
