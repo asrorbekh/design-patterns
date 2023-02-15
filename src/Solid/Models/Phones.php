@@ -9,7 +9,7 @@ use Pattern\Solid\Interfaces\LogRepositoryInterface;
 
 class Phones implements LogRepositoryInterface
 {
-    public static function getPhone(int $id)
+    public static function getById(int $id)
     {
         $sql = "SELECT * FROM phones WHERE phones.id = :id";
         $data = [
@@ -22,7 +22,7 @@ class Phones implements LogRepositoryInterface
         return $model->record();
     }
 
-    public static function getPhones()
+    public function getAll()
     {
         $sql = "SELECT * FROM phones";
 
@@ -30,10 +30,5 @@ class Phones implements LogRepositoryInterface
         $model->query($sql);
 
         return $model->records();
-    }
-
-    public function getAll()
-    {
-        // TODO: Implement getAll() method.
     }
 }
