@@ -22,7 +22,7 @@ class Phones implements LogRepositoryInterface
         return $model->record();
     }
 
-    public function getAll()
+    public static function getAll()
     {
         $sql = "SELECT * FROM phones";
 
