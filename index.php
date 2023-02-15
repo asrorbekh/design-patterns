@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Pattern\Solid\Models\Phones;
 
 date_default_timezone_set('Asia/Tashkent');
+
 require './vendor/autoload.php';
 
 try {
