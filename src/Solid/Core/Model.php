@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\Core;
 
+use PDOException;
+
 class Model
 {
     public ?object $database;
@@ -41,7 +43,7 @@ class Model
             } else {
                 $this->error = 'Failed to connect database';
             }
-        } catch (\PDOException $exception) {
+        } catch (PDOException $exception) {
             dd($exception);
         }
     }

@@ -9,7 +9,8 @@ use Pattern\Solid\Interfaces\IPrinter;
 
 class SimplePrinter implements IPrinter
 {
-    public function print(Document $d){
+    public function print(Document $d)
+    {
         echo "Print document";
     }
 }

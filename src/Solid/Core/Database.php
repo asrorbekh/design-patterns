@@ -22,9 +22,9 @@ class Database
     {
         try {
             $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING];
-            self::$database = new \PDO('mysql:dbname=zor_db;host=localhost', 'root', '', $options);
-            self::$database->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-            self::$database->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
+            self::$database = new PDO('mysql:dbname=zor_db;host=localhost', 'root', '', $options);
+            self::$database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            self::$database->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
             return self::$database;
 

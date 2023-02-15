@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\Services;
 
+use RuntimeException;
+
 class CsvValidation
 {
     private array $productAttributes = [
@@ -16,7 +18,7 @@ class CsvValidation
     {
         foreach ($this->productAttributes as $attribute) {
             if (!isset($product[$attribute])) {
-                throw new \RuntimeException(sprintf('Import fail: the product attribute %s is missing', $attribute));
+                throw new RuntimeException(sprintf('Import fail: the product attribute %s is missing', $attribute));
             }
         }
     }
