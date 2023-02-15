@@ -1,0 +1,24 @@
+{
+  "name": "asrorbek/patterns",
+  "description": "A PHP library that provides various design patterns implementations.",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Asrorbek",
+      "email": "asrorbek0325@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pattern\\": "src/"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "6.3.x-dev",
+    "phpunit/phpunit": "^10.1@dev"
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
+}
