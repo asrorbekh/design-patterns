@@ -10,6 +10,10 @@ require './vendor/autoload.php';
 
 try {
     $phones = Phones::getAll();
+    $phone = Phones::getById(54);
+    if ($phone) {
+        dd($phone);
+    }
     dd($phones);
 } catch (Exception|Error $exception) {
     dd($exception);
