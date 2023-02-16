@@ -23,7 +23,7 @@ There are many design patterns that you can use in your PHP code. Some of the mo
 - Structural Patterns: These patterns are concerned with the composition of classes and objects, and include patterns
   like Adapter, Bridge, Composite, Decorator, Facade, Flyweight, and Proxy.
 
--Behavioral Patterns: These patterns are concerned with the interaction between objects, and include patterns like
+- Behavioral Patterns: These patterns are concerned with the interaction between objects, and include patterns like
 Template Method, Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy,
 and Visitor.
 
