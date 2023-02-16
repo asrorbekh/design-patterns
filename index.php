@@ -2,23 +2,35 @@
 
 declare(strict_types=1);
 
-use Pattern\Solid\Models\Phones;
+use Pattern\Solid\Services\AreaTester;
+use Pattern\Solid\Services\Rectangle;
+use Pattern\Solid\Services\Square;
 
 date_default_timezone_set('Asia/Tashkent');
 
 require './vendor/autoload.php';
 
 try {
-    $phones = Phones::getAll();
-    $phone = Phones::getById(54);
-    if ($phone) {
-        dd($phone);
-    }
-    dd($phones);
+    $a = new \Pattern\Solid\New\AreaCalculate();
+    $aa = new \Pattern\Solid\New\Circle();
+
+
+    echo $a->calculate($aa);
 } catch (Exception|Error $exception) {
     dd($exception);
 }
 
+
+//$data = array('name' => 'Asror', 'email' => 'dedede@drde.com');
+//UserRequest::validate($data);
+//$user = new User($data);
+//echo Json::form($user);
+//    $phones = Phones::getAll();
+//    $phone = Phones::getById(54);
+//    if ($phone) {
+//        dd($phone);
+//    }
+//    dd($phones);
 //$rectangle = new Rectangle();
 //$rectangleTest = new AreaTester($rectangle);
 //$rectangleTest->testArea(2, 3); // gives 6 as expecated
