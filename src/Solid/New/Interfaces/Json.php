@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\New\Interfaces;
 
+use JsonException;
+
 class Json implements FileInterface
 {
     public function __construct(public string $file)
@@ -15,7 +17,7 @@ class Json implements FileInterface
         try {
             $content = "{}";
             echo json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-        } catch (\JsonException $e) {
+        } catch (JsonException $e) {
             dd($e);
         }
     }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\Devuz\Liskov;
 
+use RuntimeException;
+
 class Parrot extends Bird
 {
 
@@ -14,6 +16,6 @@ class Parrot extends Bird
 
     public function swim(): void
     {
-        throw new \RuntimeException('Can\'t swim');
+        throw new RuntimeException('Can\'t swim');
     }
 }

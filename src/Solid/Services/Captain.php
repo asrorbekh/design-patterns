@@ -11,6 +11,5 @@ class Captain
     public function hire(ManageableInterface $worker)
     {
         $worker->beManaged();
-
     }
 }

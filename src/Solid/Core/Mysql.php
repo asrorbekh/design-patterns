@@ -10,6 +10,5 @@ class Mysql implements DbConnectionInterface
 {
     public function connect()
     {
-
     }
 }

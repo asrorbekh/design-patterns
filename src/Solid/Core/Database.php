@@ -27,13 +27,10 @@ class Database
             self::$database->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
             return self::$database;
-
         } catch (PDOException $e) {
-
             http_response_code(500);
 
             dd($e);
-
         }
     }
 

@@ -11,8 +11,8 @@ class Main
     public function top(MobileDev $mobileDev)
     {
         $a = [];
-        foreach ($mobileDev as $value){
-            $a[] =  $value;
+        foreach ($mobileDev as $value) {
+            $a[] = $value;
         }
 
         return $a;

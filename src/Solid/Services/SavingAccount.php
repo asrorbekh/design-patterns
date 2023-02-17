@@ -24,7 +24,6 @@ class SavingAccount implements AccountInterface
 
     public function withdrawal()
     {
-
     }
 
     public function calculateInterest(): float|int

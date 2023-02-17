@@ -11,7 +11,7 @@ class AreaCalc
     public function calculateArea(ShapeInterface $shapes)
     {
         $area = [];
-        foreach ($shapes as $shape){
+        foreach ($shapes as $shape) {
             $area[] = $shape->area();
         }
 

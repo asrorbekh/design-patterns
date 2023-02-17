@@ -9,7 +9,7 @@ use Pattern\Solid\Devuz\Dinversion\Good\interfaces\IMonitor;
 
 class PersonalComputer
 {
-    public function __construct(private readonly IMonitor $monitor,private readonly IKeyboard $keyboard)
+    public function __construct(private readonly IMonitor $monitor, private readonly IKeyboard $keyboard)
     {
     }
 

@@ -10,22 +10,18 @@ abstract class Vehicle
 
     public function startEngine()
     {
-
     }
 
     public function stopEngine()
     {
-
     }
 
     public function moveForward()
     {
-
     }
 
     public function moveBack()
     {
-
     }
 
 }

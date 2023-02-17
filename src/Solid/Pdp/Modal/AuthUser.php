@@ -8,11 +8,9 @@ class AuthUser extends UserGood
 {
     public function signIn()
     {
-
     }
 
     public function signOut()
     {
-
     }
 }

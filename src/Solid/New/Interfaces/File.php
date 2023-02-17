@@ -8,6 +8,5 @@ class File
 {
     public function parse($file)
     {
-
     }
 }

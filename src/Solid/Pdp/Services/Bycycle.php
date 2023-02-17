@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\Pdp\Services;
 
-use Pattern\Solid\Pdp\Component\Vehicle;
 use Pattern\Solid\Pdp\Interrfaces\Vehicle as VehicleInterface;
 
 class Bycycle implements VehicleInterface

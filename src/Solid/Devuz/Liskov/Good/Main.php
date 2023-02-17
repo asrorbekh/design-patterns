@@ -23,13 +23,13 @@ class Main
         $bird->getLocation();
     }
 
-    public function makeSwim(SwimBird $swimBird)
-    {
-        $swimBird->swim();
-    }
-
     public function makeFly(FlyBird $flyBird)
     {
         $flyBird->fly();
+    }
+
+    public function makeSwim(SwimBird $swimBird)
+    {
+        $swimBird->swim();
     }
 }

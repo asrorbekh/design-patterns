@@ -13,11 +13,9 @@ class UserBad
 
     public function signIn()
     {
-
     }
 
     public function signOut()
     {
-
     }
 }

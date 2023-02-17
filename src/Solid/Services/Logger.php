@@ -23,7 +23,6 @@ class Logger
             return "No logs";
         }
         return implode($this->logs, $dimiliter);
-
     }
 
     public function reset(): void

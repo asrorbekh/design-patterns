@@ -18,7 +18,6 @@ class Experience
 
     public function chunkNew(array $array, int $count): array
     {
-
         $index = 0;
 
         return array_reduce($array, static function ($carry, $val) use (&$index, &$count) {
@@ -28,12 +27,13 @@ class Experience
 
             return $carry;
         }, []);
-
     }
 
     public function map(array $array, $count): array
     {
-        return array_filter(array_map(static fn($val) => array_slice($array, array_search($val, $array, true) * $count, $count),
-            $array));
+        return array_filter(
+            array_map(static fn($val) => array_slice($array, array_search($val, $array, true) * $count, $count),
+                $array)
+        );
     }
 }

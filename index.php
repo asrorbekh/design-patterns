@@ -8,7 +8,7 @@ require './vendor/autoload.php';
 
 try {
     $m = new \Pattern\Solid\Devuz\Dinversion\Good\Services\Main();
-    $m->main();
+    $m->run();
 } catch (Exception|Error $exception) {
     dd($exception);
 }

@@ -13,6 +13,5 @@ class Html implements FileInterface
 
     public function parse(): void
     {
-
     }
 }

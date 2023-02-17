@@ -7,5 +7,6 @@ namespace Pattern\Solid\Devuz\Interfaces\Good;
 interface IUser
 {
     public function login(): bool;
+
     public function register(): bool;
 }
