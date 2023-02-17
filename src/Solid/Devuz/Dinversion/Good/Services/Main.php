@@ -10,7 +10,7 @@ use Pattern\Solid\Devuz\Dinversion\Good\Models\SimpleMonitor;
 
 class Main
 {
-    public function main()
+    public function main(): void
     {
         $keyboard = new SimpleKeyboard();
         $monitorS = new SimpleMonitor();
