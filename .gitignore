@@ -1,4 +1,3 @@
-
 .idea
 vendor
 *.iml
@@ -6,3 +5,4 @@ out
 gen
 composer.lock
 .phpunit.result.cache
+.gitignore

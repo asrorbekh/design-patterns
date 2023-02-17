@@ -2,25 +2,22 @@
 
 declare(strict_types=1);
 
-use Pattern\Solid\Services\AreaTester;
-use Pattern\Solid\Services\Rectangle;
-use Pattern\Solid\Services\Square;
-
 date_default_timezone_set('Asia/Tashkent');
 
 require './vendor/autoload.php';
 
 try {
-    $a = new \Pattern\Solid\New\AreaCalculate();
-    $aa = new \Pattern\Solid\New\Circle();
-
-
-    echo $a->calculate($aa);
+    $m = new \Pattern\Solid\Devuz\Dinversion\Good\Services\Main();
+    $m->main();
 } catch (Exception|Error $exception) {
     dd($exception);
 }
 
-
+//$ne = new \Pattern\Solid\Devuz\Liskov\Good\Main();
+//$ne->main();
+//$human = new \Pattern\Solid\New\Human();
+//$toilet =  new \Pattern\Solid\New\OrangeToilet();
+//$human->donePooping($toilet);
 //$data = array('name' => 'Asror', 'email' => 'dedede@drde.com');
 //UserRequest::validate($data);
 //$user = new User($data);
