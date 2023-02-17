@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\Devuz\Dinversion\Good\Models;
 
-use Pattern\Solid\Devuz\Dinversion\Good\interfaces\IKeyboard;
+use Pattern\Solid\Devuz\Dinversion\Good\Interfaces\IKeyboard;
 
 class SimpleKeyboard implements IKeyboard
 {

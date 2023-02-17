@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\Devuz\Dinversion\Good\Models;
 
-use Pattern\Solid\Devuz\Dinversion\Good\interfaces\IMonitor;
+use Pattern\Solid\Devuz\Dinversion\Good\Interfaces\IMonitor;
 
 class LedMonitor implements IMonitor
 {

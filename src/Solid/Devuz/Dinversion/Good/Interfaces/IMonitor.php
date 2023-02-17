@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pattern\Solid\Devuz\Dinversion\Good\interfaces;
+namespace Pattern\Solid\Devuz\Dinversion\Good\Interfaces;
 
 interface IMonitor
 {

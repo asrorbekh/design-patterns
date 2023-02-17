@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Pattern\Solid\Devuz\Dinversion\Good\Services;
 
-use Pattern\Solid\Devuz\Dinversion\Good\interfaces\IKeyboard;
-use Pattern\Solid\Devuz\Dinversion\Good\interfaces\IMonitor;
+use Pattern\Solid\Devuz\Dinversion\Good\Interfaces\IKeyboard;
+use Pattern\Solid\Devuz\Dinversion\Good\Interfaces\IMonitor;
 
 class PersonalComputer
 {
